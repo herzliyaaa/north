@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Barangay Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="time-date">
+          <div class="time"><h1>7:30 AM</h1></div>
+          <div class="date"><h3>WEDNESDAY, 31 March 21</h3></div>
+        </div>
+        <div class="dashboard-logo">
+          <img src="/img/dashboard-logo.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="dashboard.html" class="link">
+            <img src="/img/icons/home-page-50.png" alt="" />
+            <h3>Dashboard</h3>
+          </a>
+          <a href="residents.html" class="link">
+            <div class="active"></div>
+            <img src="/img/icons/user-account-50.png" alt="" />
+            <h3>Residents</h3>
+          </a>
+          <a href="certificates.html" class="link">
+            <img src="/img/icons/documents-50.png" alt="" />
+            <h3>Certificates</h3>
+          </a>
+          <a href="announcements.html" class="link">
+            <img src="/img/icons/cell-phone-50.png" alt="" />
+            <h3>Announcements</h3>
+          </a>
+          <a href="index.html" class="link">
+            <img src="/img/icons/exit-50.png" alt="" />
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </nav>
+
+      <section>
+        <div class="header"><h1>Resident Profile</h1>
+          <a href="residents.html">
+              <button class="back-btn">Back</button>
+          </a>
+        </div>
+        <div class="content">
+            
+
+            <div class="resident-profile">
+              <div class="profile-pic">
+            <img src="/img/brgy officials/seunggi.jpg" alt="">
+          </div>
+            <div class="infos">
+
+<!--<div class="view-info">
+                <h5>ID:</h5>
+                <input type="number" >
+              </div>
+              
+              <div class="view-info">
+                <h5>First Name:</h5>
+                <input type="text" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Middle Name:</h5>
+                <input type="text" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Last Name:</h5>
+                <input type="text" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Sex:</h5>
+                <select name="sex" id="sex">
+                  <option value="">--</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              
+              <div class="view-info">
+                <h5>Date of Birth:</h5>
+                <input type="date" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Age:</h5>
+                <input type="number" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Civil Status:</h5>
+                <select name="civ-stat" id="civ-stat">
+                  <option value="">--</option>
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                  <option value="widowed">Widowed</option>
+                </select>
+              </div>
+              
+              <div class="view-info">
+                <h5>Voter Status:</h5>
+                <select name="voter-stat" id="voter-stat">
+                  <option value="">--</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              
+              <div class="view-info">
+                <h5>Home Address:</h5>
+                <textarea name="home-address" id="home-address" rows="2"
+                ></textarea>
+              </div>
+              
+              <div class="view-info">
+                <h5>Phone Number:</h5>
+                <input type="text" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Tel. Number:</h5>
+                <input type="text" >
+              </div>
+              
+              <div class="view-info">
+                <h5>Email Address:</h5>
+                <input type="text" >
+              </div>
+-->
+
+              <div class="view-info">
+                <h5>ID:</h5>
+                <h6>001</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>First Name:</h5>
+                <h6>Chruy</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Middle Name:</h5>
+                <h6>Gaming</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Last Name:</h5>
+                <h6>Garidos</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Sex:</h5>
+                <h6>Male</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Date of Birth:</h5>
+                <h6>16 Nov 1999</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Age:</h5>
+                <h6>21</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Civil Status:</h5>
+                <h6>Married</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Voter Status:</h5>
+               <h6>Yes</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Home Address:</h5>
+                <h6>Blk1 Lot 1 Sitio Mahusay, Brgy. Lagao, General Santos City, South Cotabato, Mindanao, Philippines</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Phone Number:</h5>
+                <h6>09123456789</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Tel. Number:</h5>
+                <h6>87000</h6>
+              </div>
+              
+              <div class="view-info">
+                <h5>Email Address:</h5>
+                <h6>chruy@email.com</h6>
+              </div>
+                <button class="edit-btn">Edit</button>
+            </div>
+        </div>
+        </div>
+      </section>
+      </div>
+    </main>
+  </body>
+</html>

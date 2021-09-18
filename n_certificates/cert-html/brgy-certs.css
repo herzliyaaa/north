@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("bg.png") no-repeat center center fixed;
+}
+
+@media print {
+  .noprint {
+    visibility: hidden;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+.text .br {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.text .br-md {
+  display: block;
+  margin-bottom: 1.7rem;
+}
+
+/* BARANGAY CLEARANCE */
+
+.canvas {
+  /* background: url("cert-header.png") no-repeat center center fixed;
+  background-size: contain;
+  height: 100vh;
+  width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  height: 1056px;
+  width: 815px;
+  /* box-shadow: 0 0.1rem 0.25rem rgba(22, 22, 22, 0.7); */
+}
+
+.text {
+  position: absolute;
+  top: 21.5%;
+  padding: 0 0.75in;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.text p {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75rem;
+  font-size: 0.95rem;
+}
+
+.text .kap {
+  line-height: 1.1rem;
+}
+
+.text .kap-name {
+  /* color: #f64242; */
+  color: #ff0066;
+  font-family: arial black;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.text .k-pos {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.text .seal {
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 0.9rem;
+}
+
+.text .thumb {
+  display: flex;
+  margin-top: 3rem;
+  /* position: absolute;
+  right: 0.75in;
+  bottom: 11.5rem; */
+}
+
+.box {
+  border: 2.5px solid black;
+  height: 3cm;
+  width: 3cm;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img-box {
+  height: 3cm;
+  width: 3cm;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img-box img {
+  width: 3cm;
+}
+
+.box p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1rem;
+}
+
+.text .sig {
+  border-top: 1.75px solid black;
+  width: 7cm;
+  margin-top: 3.5rem;
+}
+
+.text .sig p {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1rem;
+  padding: 3px 0 0 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  margin-top: 3.7rem;
+}
+
+/* BARANGAY BUSINESS CLEARANCE */
+
+.text2 {
+  position: absolute;
+  top: 21.5%;
+  padding: 0 0.75in;
+  width: 100%;
+}
+
+.text2 h1 {
+  color: #ff0066;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.text2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+}
+
+.text2 p .to {
+  margin-top: 1rem;
+}
+
+.tab {
+  margin-left: 0.64rem;
+}
+
+.tab2 {
+  margin-left: 4.03rem;
+}
+
+.pink {
+  width: 100%;
+  height: 1.7rem;
+  padding: 0 0.75in;
+  /* background-color: #ff0066; */
+  border-bottom: #ff6699 1.7rem solid;
+  margin: 5px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Century Gothic", sans-serif;
+  position: absolute;
+  padding-top: 5.5px;
+  top: 0;
+}
+
+.text2 .text-center {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.text-center span {
+  font-weight: bold;
+}
+
+.text2 .text-justify {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 0.85rem;
+  text-align: justify;
+  line-height: 1rem;
+}
+
+.pink-text {
+  font-size: 0.7rem;
+  font-family: "Lucida Fax";
+  font-style: italic;
+  font-weight: bold;
+  color: #ff0066;
+}
+
+/* .r-thumb {
+  display: flex;
+  position: absolute;
+  right: 1.55in;
+  bottom: 5rem;
+}
+
+.r-thumb p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 0.6rem;
+} */
+
+.text2 .thumb {
+  display: flex;
+  margin-top: 3rem;
+  position: absolute;
+  right: 0.75in;
+  bottom: 5rem;
+}
+
+.text2 .thumb p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.text2 .thumb .box {
+  border: 2.5px solid black;
+  height: 3cm;
+  width: 3cm;
+  margin-left: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text2 .sig {
+  border-top: 1.75px solid black;
+  width: 7cm;
+  position: absolute;
+  right: 0.76in;
+  bottom: 0;
+}
+
+.text2 .sig p {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1rem;
+  padding: 3px 0 0 0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Barangay Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="time-date">
+          <div class="time"><h1>7:30 AM</h1></div>
+          <div class="date"><h3>WEDNESDAY, 31 March 21</h3></div>
+        </div>
+        <div class="dashboard-logo">
+          <img src="/img/dashboard-logo.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="dashboard.html" class="link">
+            <img src="/img/icons/home-page-50.png" alt="" />
+            <h3>Dashboard</h3>
+          </a>
+          <a href="residents.html" class="link">
+            <div class="active"></div>
+            <img src="/img/icons/user-account-50.png" alt="" />
+            <h3>Residents</h3>
+          </a>
+          <a href="certificates.html" class="link">
+            <img src="/img/icons/documents-50.png" alt="" />
+            <h3>Certificates</h3>
+          </a>
+          <a href="announcements.html" class="link">
+            <img src="/img/icons/cell-phone-50.png" alt="" />
+            <h3>Announcements</h3>
+          </a>
+          <a href="index.html" class="link">
+            <img src="/img/icons/exit-50.png" alt="" />
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </nav>
+
+      <div class="residents-section">
+        <div class="search">
+          <img src="/img/icons/search-account-50.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="directory">
+          <div class="header">
+            <h1>Resident Directory</h1>
+            <a href="new-resident.html">
+              <button class="add-resident-btn">
+                <span
+                  ><img src="/img/icons/add-new-24.png" alt="" />
+                  <p>Add Resident</p>
+                </span>
+              </button>
+            </a>
+          </div>
+
+          <div class="content">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>FIRST NAME</th>
+                <th>MIDDLE NAME</th>
+                <th>LAST NAME</th>
+                <th>SEX</th>
+                <th>AGE</th>
+                <th>CIVIL STATUS</th>
+                <th>VOTER STATUS</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>001</td>
+                <td>Chruy</td>
+                <td>Gaming</td>
+                <td>Garidos</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Playboy</td>
+                <td>No</td>
+                <td>
+                  <a href="view-resident.html">
+                    <button class="view">View</button></a
+                  >
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Shering</td>
+                <td>Tiblaning</td>
+                <td>Cunaning</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Married</td>
+                <td>Yes</td>
+                <td>
+                  <a href="view-resident.html">
+                    <button class="view">View</button></a
+                  >
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
