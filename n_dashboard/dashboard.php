@@ -1,5 +1,5 @@
 <?php
-  include "../db_conn.php"
+include "../db_conn.php"
 ?>
 
 <!DOCTYPE html>
@@ -31,9 +31,9 @@
 
                 <div class="col-1 a">
                     <div class="pop">
-                        <?php 
+                        <?php
                         $squery = mysqli_query($conn, "select COUNT(*) as cnt from residents");
-                        $pop = mysqli_fetch_array($squery);   
+                        $pop = mysqli_fetch_array($squery);
                         ?>
 
                         <h1><?php echo $pop['cnt']; ?></h1>
@@ -124,10 +124,10 @@
                 </div>
 
                 <script>
-                function menuToggle() {
-                    const toggleMenu = document.querySelector('.dropdown');
-                    toggleMenu.classList.toggle('active')
-                }
+                    function menuToggle() {
+                        const toggleMenu = document.querySelector('.dropdown');
+                        toggleMenu.classList.toggle('active')
+                    }
                 </script>
 
 
@@ -163,14 +163,14 @@
                     <div>
 
                         <div class="male-female">
-                            <?php 
-            
-            $squery = mysqli_query($conn, "select COUNT(sex) as cntM from residents where sex='Male'");
-            $male = mysqli_fetch_array($squery); 
+                            <?php
 
-            $squery = mysqli_query($conn, "select COUNT(sex) as cntF from residents where sex='Female'");
-            $female = mysqli_fetch_array($squery);
-            ?>
+                            $squery = mysqli_query($conn, "select COUNT(sex) as cntM from residents where sex='Male'");
+                            $male = mysqli_fetch_array($squery);
+
+                            $squery = mysqli_query($conn, "select COUNT(sex) as cntF from residents where sex='Female'");
+                            $female = mysqli_fetch_array($squery);
+                            ?>
 
 
 
@@ -180,12 +180,12 @@
                         </div>
 
                         <div class="total-pop">
-                            <?php 
-            $squery = mysqli_query($conn, "select COUNT(*) as cnt from residents");
-            $wew = mysqli_fetch_array($squery);   
-            ?>
+                            <?php
+                            $squery = mysqli_query($conn, "select COUNT(*) as cnt from residents");
+                            $wew = mysqli_fetch_array($squery);
+                            ?>
                             <header>
-                                <?php echo 'Total:<br> ',$wew['cnt']; ?>
+                                <?php echo 'Total:<br> ', $wew['cnt']; ?>
                             </header>
                         </div>
 
@@ -217,39 +217,36 @@
                         <div>
                             <a href="../n_officials/new_official.php" id='edit'>
                                 <button class="edit-official-btn">
-                                    <svg fill="#f7f6fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                        width="15px" height="15px">
-                                        <path
-                                            d="M 18.414062 2 C 18.158188 2 17.902031 2.0974687 17.707031 2.2929688 L 16 4 L 20 8 L 21.707031 6.2929688 C 22.098031 5.9019687 22.098031 5.2689063 21.707031 4.8789062 L 19.121094 2.2929688 C 18.925594 2.0974687 18.669937 2 18.414062 2 z M 14.5 5.5 L 3 17 L 3 21 L 7 21 L 18.5 9.5 L 14.5 5.5 z" />
+                                    <svg fill="#f7f6fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15px" height="15px">
+                                        <path d="M 18.414062 2 C 18.158188 2 17.902031 2.0974687 17.707031 2.2929688 L 16 4 L 20 8 L 21.707031 6.2929688 C 22.098031 5.9019687 22.098031 5.2689063 21.707031 4.8789062 L 19.121094 2.2929688 C 18.925594 2.0974687 18.669937 2 18.414062 2 z M 14.5 5.5 L 3 17 L 3 21 L 7 21 L 18.5 9.5 L 14.5 5.5 z" />
                                     </svg>
                                     Edit
                                 </button>
                             </a>
                         </div>
                         <?php
-          if ($_SESSION['role'] == 'Secretary')
-          {?>
-                        <script>
-                        document.getElementById("edit").style.display = "none";
-                        </script>
-                        <?php }?>
+                        if ($_SESSION['role'] == 'Secretary') { ?>
+                            <script>
+                                document.getElementById("edit").style.display = "none";
+                            </script>
+                        <?php } ?>
                         <h2>Term Period: 2021-2024</h2>
                     </div>
 
 
                     <div class="brgycapt">
                         <?php
-      $squery =  mysqli_query($conn,"select * from officials where off_position = 'Barangay Captain'");
-      while ($row = mysqli_fetch_array($squery)){
-      ?>
-                        <a href="../n_officials/view-officials.php?id=<?php echo $row['id'];?>">
-                            <img src="../n_officials/image/<?php echo basename($row['img_url']);?>" alt="" />
-                        </a>
-                        <div class="brgycapt-name">
-                            <h3><span><?php echo $row['off_position'];?>: </span><?php echo $row['off_name'];?></h3>
-                        </div>
+                        $squery =  mysqli_query($conn, "select * from officials where off_position = 'Barangay Captain'");
+                        while ($row = mysqli_fetch_array($squery)) {
+                        ?>
+                            <a href="../n_officials/view-officials.php?id=<?php echo $row['id']; ?>">
+                                <img src="../n_officials/image/<?php echo basename($row['img_url']); ?>" alt="" />
+                            </a>
+                            <div class="brgycapt-name">
+                                <h3><span><?php echo $row['off_position']; ?>: </span><?php echo $row['off_name']; ?></h3>
+                            </div>
 
-                        <?php }?>
+                        <?php } ?>
                     </div>
 
 
@@ -257,64 +254,64 @@
                     <div class="brgyofficials">
 
                         <?php
-      $squery =  mysqli_query($conn,"select * from officials where off_position = 'Barangay Kagawad'");
-      while ($row = mysqli_fetch_array($squery)){
-      ?>
-                        <div class="brgyofficial">
-                            <a href="../n_officials/view-officials.php?id=<?php echo $row['id'];?>">
-                                <img src="../n_officials/image/<?php echo basename($row['img_url']);?>" alt="" />
-                            </a>
-                            <h5><?php echo $row['off_name'];?></h5>
-                            <p><?php echo $row['off_position'];?></p>
-                        </div>
+                        $squery =  mysqli_query($conn, "select * from officials where off_position = 'Barangay Kagawad'");
+                        while ($row = mysqli_fetch_array($squery)) {
+                        ?>
+                            <div class="brgyofficial">
+                                <a href="../n_officials/view-officials.php?id=<?php echo $row['id']; ?>">
+                                    <img src="../n_officials/image/<?php echo basename($row['img_url']); ?>" alt="" />
+                                </a>
+                                <h5><?php echo $row['off_name']; ?></h5>
+                                <p><?php echo $row['off_position']; ?></p>
+                            </div>
 
-                        <?php }?>
-
-                        <?php
-      $squery =  mysqli_query($conn,"select * from officials where off_position = 'SK Chairperson'");
-      while ($row = mysqli_fetch_array($squery)){
-      ?>
-                        <div class="brgyofficial">
-                            <a href="../n_officials/view-officials.php?id=<?php echo $row['id'];?>">
-                                <img src="../n_officials/image/<?php echo basename($row['img_url']);?>" alt="" />
-                            </a>
-                            <h5><?php echo $row['off_name'];?></h5>
-                            <p><?php echo $row['off_position'];?></p>
-                        </div>
-                        <?php
-        }
-        ?>
+                        <?php } ?>
 
                         <?php
-      $squery =  mysqli_query($conn,"select * from officials where off_position = 'Barangay Secretary'");
-      while ($row = mysqli_fetch_array($squery)){
-      ?>
+                        $squery =  mysqli_query($conn, "select * from officials where off_position = 'SK Chairperson'");
+                        while ($row = mysqli_fetch_array($squery)) {
+                        ?>
+                            <div class="brgyofficial">
+                                <a href="../n_officials/view-officials.php?id=<?php echo $row['id']; ?>">
+                                    <img src="../n_officials/image/<?php echo basename($row['img_url']); ?>" alt="" />
+                                </a>
+                                <h5><?php echo $row['off_name']; ?></h5>
+                                <p><?php echo $row['off_position']; ?></p>
+                            </div>
+                        <?php
+                        }
+                        ?>
 
-                        <div class="brgyofficial">
-                            <a href="../n_officials/view-officials.php?id=<?php echo $row['id'];?>">
-                                <img src="../n_officials/image/<?php echo basename($row['img_url']);?>" alt="" />
-                            </a>
-                            <h5><?php echo $row['off_name'];?></h5>
-                            <p><?php echo $row['off_position'];?></p>
-                        </div>
                         <?php
-        }
-        ?>
-                        <?php
-      $squery =  mysqli_query($conn,"select * from officials where off_position = 'Barangay Treasurer'");
-      while ($row = mysqli_fetch_array($squery)){
-      ?>
+                        $squery =  mysqli_query($conn, "select * from officials where off_position = 'Barangay Secretary'");
+                        while ($row = mysqli_fetch_array($squery)) {
+                        ?>
 
-                        <div class="brgyofficial">
-                            <a href="../n_officials/view-officials.php?id=<?php echo $row['id'];?>">
-                                <img src="../n_officials/image/<?php echo basename($row['img_url']);?>" alt="" />
-                            </a>
-                            <h5><?php echo $row['off_name'];?></h5>
-                            <p><?php echo $row['off_position'];?></p>
-                        </div>
+                            <div class="brgyofficial">
+                                <a href="../n_officials/view-officials.php?id=<?php echo $row['id']; ?>">
+                                    <img src="../n_officials/image/<?php echo basename($row['img_url']); ?>" alt="" />
+                                </a>
+                                <h5><?php echo $row['off_name']; ?></h5>
+                                <p><?php echo $row['off_position']; ?></p>
+                            </div>
                         <?php
-        }
-        ?>
+                        }
+                        ?>
+                        <?php
+                        $squery =  mysqli_query($conn, "select * from officials where off_position = 'Barangay Treasurer'");
+                        while ($row = mysqli_fetch_array($squery)) {
+                        ?>
+
+                            <div class="brgyofficial">
+                                <a href="../n_officials/view-officials.php?id=<?php echo $row['id']; ?>">
+                                    <img src="../n_officials/image/<?php echo basename($row['img_url']); ?>" alt="" />
+                                </a>
+                                <h5><?php echo $row['off_name']; ?></h5>
+                                <p><?php echo $row['off_position']; ?></p>
+                            </div>
+                        <?php
+                        }
+                        ?>
                     </div>
 
 
@@ -329,6 +326,6 @@
 
 </html>
 
-<?php include "../n_reports/demographic_queries.php"?>
+<?php include "../n_reports/demographic_queries.php" ?>
 
-<?php include "../n_dashboard/dashboard_charts.php"?>
+<?php include "../n_dashboard/dashboard_charts.php" ?>

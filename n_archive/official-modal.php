@@ -101,9 +101,9 @@
       <span class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <h4>Are you sure you want to delete <?php echo $row['off_name']?>?</h4>
-      <br>
-      <p>You can restore this in the Officials Archive.</p>
+      <h4>Are you sure you want to permanently delete <br> <?php echo $row['off_name']?>?</h4>
+     
+     
     </div>
 
     <div class="modal-footer">
@@ -111,7 +111,7 @@
     
     
           
-          <a href="delete_officials.php?id=<?php echo $row['id']?>">
+          <a href="official-delete.php?officials_archive_id=<?php echo $row['officials_archive_id']?>">
                   <button class="delete-btn">Delete</button>
                   </a>
             

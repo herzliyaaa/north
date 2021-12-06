@@ -32,8 +32,8 @@ include "../db_conn.php";
 
 
                         <?php
-                $id= $_GET['trash_id'];
-                $squery =  mysqli_query($conn,"select * from trash where trash_id = $id");
+                $id= $_GET['residents_archive_id'];
+                $squery =  mysqli_query($conn,"select * from residents_archive where residents_archive_id = $id");
                 while ($row = mysqli_fetch_array($squery)){
 ?>
 
@@ -43,7 +43,7 @@ include "../db_conn.php";
                             </div>
                             <div class="view-info">
                                 <h5>ID:</h5>
-                                <h6><?php echo $row['id'] ?></h6>
+                                <h6><?php echo $row['resident_id'] ?></h6>
                             </div>
 
                             <div class="view-info">
@@ -166,9 +166,9 @@ include "../db_conn.php";
                     <div class="residents-btns">
                         
                         <!-- delete residents -->
-                        <?php include('../n_archive/archive-modal.php'); ?>
-                        <button class="delete-btn" id="delete">Delete</button>
                         
+                        <button class="delete-btn" id="delete-archive">Delete</button>
+                        <?php include('resident-modal.php'); ?>
 
 
                         <?php

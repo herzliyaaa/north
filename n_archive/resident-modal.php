@@ -118,7 +118,7 @@ text-align: center;
 
 
     <div class="modal-body">
-      <h4>Are you sure you want to delete<br><?php echo $row['first_name']," ", $row['last_name'] ?>?</h4>
+      <h4>Are you sure you want to permanently delete<br><?php echo $row['first_name']," ", $row['last_name'] ?>?</h4>
     </div>
 
 
@@ -127,14 +127,16 @@ text-align: center;
     <div class="brgy-cert">
     <div>
           <div class="view-info">
-          <a href="delete.php?trash_id=<?php echo $row['trash_id']?>">
+          <a href="resident-delete.php?residents_archive_id=<?php echo $row['residents_archive_id']?>">
                   <button class="delete-btn">Delete</button>
+
+
                   </a>
             </div>
           </div>
 
           
-          <button class="generate-btn" id="cancel">Cancel</button>  
+          <button class="generate-btn" id="res-cancel">Cancel</button>  
             
           </div>
           </div>
@@ -143,54 +145,36 @@ text-align: center;
 
 
 
-<script>
+  <script>
 // Get the modal
-var modalgenerate = document.getElementById("modalgenerate");
-var modaldelete = document.getElementById("modaldelete");
+var modalarchive = document.getElementById("modaldelete");
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("generate");
-var btn2 = document.getElementById("delete");
+var btn3 = document.getElementById("delete-archive");
 
 // Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close")[0];
-var close = document.getElementsByClassName("close2")[0];
-var del = document.getElementById("cancel");
+var span_res = document.getElementsByClassName("close2")[0];
+var del_arch = document.getElementById("res-cancel");
+
 
 // When the user clicks the button, open the modal 
-btn1.onclick = function() {
-  modalgenerate.style.display = "block";
-}
-btn2.onclick = function() {
-  modaldelete.style.display = "block";
+btn3.onclick = function() {
+  modalarchive.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-    modalgenerate.style.display = "none";
+span_res.onclick = function() {
+  modalarchive.style.display = "none";
 }
-close.onclick = function() {
-    modaldelete.style.display = "none";
+del_arch.onclick = function() {
+  modalarchive.style.display = "none";
 }
-del.onclick = function() {
-    modaldelete.style.display = "none";
-}
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modalgenerate) {
-    modalgenerate.style.display = "none";
-  }
-
-else if (event.target == modaldelete) {
-    modaldelete.style.display = "none";
+  if (event.target == modalarchive) {
+    modalarchive.style.display = "none";
   }
 }
-//   window.onclick = function(event) {
-//   if (event.target == modaldelete) {
-//     modaldelete.style.display = "none";
-//   }
-// }
 </script>
 
 

@@ -163,6 +163,8 @@ text-align: center;
 
     <div class="modal-body">
       <h4>Are you sure you want to delete<br><?php echo $row['first_name']," ", $row['last_name'] ?>?</h4>
+      <br>
+      <p>You can restore this in the Residents Archive.</p>
     </div>
 
 

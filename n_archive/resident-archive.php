@@ -24,15 +24,15 @@
 
 
             <div class="header">
-                <h1>Archive</h1>
+                <h1>Resident Archive</h1>
 
                 <div class="del-all" style="display:flex;align-content: center;justify-content: flex-start;align-items: center;margin-right:20px;">
 
                     <?php
-                    $del_all =  mysqli_query($conn, "select * from trash");
+                    $del_all =  mysqli_query($conn, "select * from residents_archive");
                     $truncate = mysqli_fetch_array($del_all); ?>
 
-                    <a href="delete-all.php?trash_id=<?php echo $truncate['trash_id'] ?>">
+                    <a href="resident-empty-archive.php?residents_archive_id=<?php echo $truncate['residents_archive_id'] ?>">
                         <button class="delete-btn" style="width: 140px; ">Empty Archive</button></a>
                 </div>
             </div>
@@ -70,12 +70,12 @@
                         </thead>
                         <?php
 
-                        $squery =  mysqli_query($conn, "select * from trash");
+                        $squery =  mysqli_query($conn, "select * from residents_archive");
                         while ($row = mysqli_fetch_array($squery)) {
 
                         ?>
                             <tr>
-                                <td><?php echo $row['id'] ?></td>
+                                <td><?php echo $row['resident_id'] ?></td>
                                 <td><?php echo $row['first_name'] ?></td>
                                 <td><?php echo $row['mid_name'] ?></td>
                                 <td><?php echo $row['last_name'] ?></td>
@@ -100,12 +100,11 @@
                                 <td><?php echo $row['civil_status'] ?></td>
                                 <td><?php echo $row['voter_status'] ?></td>
 
-                                <td><a href="view-resident.php?trash_id=<?php echo $row['trash_id'] ?>">
+                                <td><a href="view-resident.php?residents_archive_id=<?php echo $row['residents_archive_id'] ?>">
                                         <button class="view">View</button></a>
-                                    <a href="restore.php?trash_id=<?php echo $row['trash_id'] ?>">
+                                    <a href="resident-restore.php?residents_archive_id=<?php echo $row['residents_archive_id'] ?>">
                                         <button class="view">Restore</button></a>
-                                    <a href="delete.php?trash_id=<?php echo $row['trash_id'] ?>">
-                                        <button class="delete-btn-archive" style="background-color:#f64242;">Delete</button></a>
+                                    
                                 </td>
 
                             </tr>
