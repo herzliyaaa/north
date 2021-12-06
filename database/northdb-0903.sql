@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2021 at 07:26 PM
+-- Generation Time: Sep 03, 2021 at 06:24 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 7.3.26
+-- PHP Version: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -157,28 +157,7 @@ INSERT INTO `barangay_clearance` (`id`, `resident_id`, `name`, `address`, `purpo
 (109, 55, 'troy Michael Ancino Garidos ', '15 wew 555', '1231', '2021-06-17', '12321321', '1231', '2021-07-01', '../../n_residents/image/default.png', '2021-06-17'),
 (110, 55, 'troy Michael Ancino Garidos ', '15 wew 555', '1231', '2021-06-17', '12321321', '1231', '2021-07-01', '../../n_residents/image/default.png', '2021-06-17'),
 (111, 44, 'reijan12312312 pangit BAYOT 21', 'asd asdada dasdac', 'qwewq', '2021-06-17', 'qwewqqwe', 'qweqw', '2021-06-15', '../../n_residents/image/1623913790.jpg', '2021-06-17'),
-(112, 55, 'Troy Michael Ancino Garidos Jr.', '555 Lemon Street, Purok 15', 'Job Application', '2021-07-11', '789456123', 'Barangay North', '2021-07-10', '../../n_residents/image/1625992418779_leeikjun.jpg', '2021-07-11'),
-(113, 44, 'Juan Reyes Dela Cruz Sr.', 'purok 6 Santa Cruz 15', 'hehe', '2021-09-03', '434241', '5646', '2021-09-01', '../../n_residents/image/1623913790.jpg', '2021-09-03'),
-(114, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'hehe', '2021-09-06', '434241', '5646', '2021-09-02', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-09-06'),
-(115, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'hehe', '2021-09-06', '434241', '5646', '2021-09-01', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-09-06'),
-(116, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'a', '2021-09-21', '21', 'ad', '2021-09-22', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-09-22'),
-(117, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'dfsfsf', '2021-10-03', '231', 'dasddsda', '2021-10-01', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-10-04'),
-(118, 87, 'Enrique Dela Cruz Gil Jr.', 'purok 11 Alerta 21', 'dfsfsfaasasasas', '2021-10-03', 'ty', 'yt', '2021-09-29', '../../n_residents/image/1629249001338_kimjunwan.jpg', '2021-10-04'),
-(119, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'hehe', '2021-10-04', '434241', '5646', '2021-09-30', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-10-04'),
-(120, 66, 'Andres Bonifacio Rizal Jr.', 'purok 7 Mangga 55', 'hehe', '2021-10-04', '434241', '5646', '2021-10-04', '../../n_residents/image/1629248178181_ahnjeongwon.jpg', '2021-10-04'),
-(121, 44, 'Juan Reyes Dela Cruz Sr.', 'purok 6 Santa Cruz 15', 'hehe', '2021-10-04', '434241', '5646', '2021-10-01', '../../n_residents/image/1633361753541_right.png', '2021-10-04'),
-(122, 44, 'Juan Reyes Dela Cruz Sr.', 'Kurok 6 Santa Cruz 15', 'hehe', '2021-10-04', '434241', '5646', '2021-10-01', '../../n_residents/image/1633361753541_right.png', '2021-10-04'),
-(123, 72, 'Daniel Santos Padilla III', 'purok 3 Recto 32', 'hehe', '2021-10-04', '434241', 'npt', '2021-10-01', '../../n_residents/image/1629248402756_yangseokhyung.jpg', '2021-10-04'),
-(124, 72, 'Daniel Santos Padilla III', 'purok 3 Recto 32', 'Job', '2021-10-04', '434241', 'North', '2021-10-01', '../../n_residents/image/1629248402756_yangseokhyung.jpg', '2021-10-04'),
-(125, 130, 'Lia Gomez Barangan ', 'purok 13 Macopa 12', 'Job', '2021-10-04', '1111', 'Sa May Bahay', '2021-10-01', '../../n_residents/image/1629249349689_chuminha.jpg', '2021-10-04'),
-(126, 150, 'herzlia Jane ertert Ramos asdadsa', 'Purok 1  gdfg sfsdf', 'hehe', '2021-10-04', '434241', 'North', '2021-10-04', '../../n_residents/image/1633362289593_FAk9BcfUcBc24f4.jpg', '2021-10-04'),
-(127, 150, 'herzlia Jane ertert Ramos asdadsa', 'Purok 1  gdfg sfsdf', 'Aehe', '2021-10-04', '434241', 'North', '2021-10-04', '../../n_residents/image/1633362289593_FAk9BcfUcBc24f4.jpg', '2021-10-04'),
-(128, 81, 'Charo Santos Concio ', 'purok 7 Mangga 74', 'Job', '2021-10-04', '434241', '5646', '2021-10-01', '../../n_residents/image/1629248639009_heoseonbin.jpg', '2021-10-04'),
-(129, 55, 'Troy Michael Ancino Garidos Jr.', '15 Lemon 555', 'fvfsdf', '2021-10-04', '434241', '5646', '2021-09-30', '../../n_residents/image/1625992418779_leeikjun.jpg', '2021-10-04'),
-(130, 92, 'Eunice Tiblani Cunanan ', 'purok 7 Mangga 25', 'hehe', '2021-10-04', '43424', 'npt', '2021-10-01', '../../n_residents/image/1629249231020_janggyeoul.jpg', '2021-10-04'),
-(131, 81, 'Charo Santos Concio ', 'purok 7 Mangga 74', 'hehe', '2021-10-09', '434241', '5646', '2021-10-10', '../../n_residents/image/1629248639009_heoseonbin.jpg', '2021-10-10'),
-(132, 4, 'Aeri Kim Uchinaga ', 'Purok 7 Sampaguita St. 32', 'Trip', '2021-10-19', '231', 'North', '2021-10-20', '../../n_residents/image/1634655345505_354cd0eb23c4439b3d9a4a44ecc9885b.jpg', '2021-10-20'),
-(133, 6, 'Jake Jaeyun Sim ', 'Purok 11 Sampaguita St. 003', 'Trip', '2021-10-19', '231', 'North', '2021-10-19', '../../n_residents/image/1634656788445_tumblr_d637b9fca7afc39f76cc3b0c7e515b10_36b993f3_400.jpg', '2021-10-20');
+(112, 55, 'Troy Michael Ancino Garidos Jr.', '555 Lemon Street, Purok 15', 'Job Application', '2021-07-11', '789456123', 'Barangay North', '2021-07-10', '../../n_residents/image/1625992418779_leeikjun.jpg', '2021-07-11');
 
 -- --------------------------------------------------------
 
@@ -248,34 +227,18 @@ CREATE TABLE `residents` (
 --
 
 INSERT INTO `residents` (`id`, `first_name`, `mid_name`, `last_name`, `suffix`, `sex`, `date_of_birth`, `house_number`, `street`, `purok`, `occupation`, `citizenship`, `health_status`, `civil_status`, `voter_status`, `phone_number`, `tel_number`, `email`, `img_url`) VALUES
-(1, 'Eunice', 'Ramos', 'Cunanan', '', 'Female', '1956-03-02', 'Blk. 3 Lot 13', 'Aespa St.', 'Purok 1', 'Student', 'Filipino', 'High Blood', 'Single', 'Registered', '09268187409', '123-123-123', 'yunis123@gmail.com', '1634913651145_a10a074e112180348c61e0c35ccc6d80.jpg'),
-(2, 'Winter', 'Min Jeong', 'Kim', '', 'Female', '2001-01-01', 'Blk. 3 Lot 13', 'Sampaguita St.', 'Purok 2', 'Singer', 'Filipino', 'No Comorbidity', 'Single', 'Registered', '09261114309', '5354-12-1222', 'winterkim@yahoo.com', '1634654525729_tumblr_8b720e5495df34a9270db0988438c9cb_c42df076_2048.png'),
-(3, 'Karina', 'Jimin', 'Yu', '', 'Female', '2005-04-11', '002', 'Sampaguita St.', 'Purok 4', 'Singer', 'Filipino', 'High Blood', 'Single', 'Registered', '0911292922', '244-2333-122', 'herzliabarangan@gmail.com', '1634654833631_3508bcb80f30d0a82adbead6d56baf08.jpg'),
-(4, 'Aeri', 'Kim', 'Uchinaga', '', 'Female', '2000-10-30', '32', 'Sampaguita St.', 'Purok 7', 'Singer', 'Filipino', 'High Blood', 'Single', 'Registered', '09268187409', '5354-222-22', 'datshotg@gmail.com', '1634655345505_354cd0eb23c4439b3d9a4a44ecc9885b.jpg'),
-(5, 'Ning ', 'Yi ', 'Zhuo ', '', 'Female', '2010-10-12', '003', 'Sampaguita St.', 'Purok 10', 'Singer', 'Filipino', 'High Blood', 'Single', 'Not Registered', '09268187409', '244-121-211', 'ningning@gmail.com', '1634656326421_0f4JoL6-_400x400.jpg'),
-(6, 'Jake', 'Jaeyun', 'Sim', '', 'Male', '2002-11-15', '003', 'Sampaguita St.', 'Purok 10', 'Singer', 'Filipino', 'Covid', 'Single', 'Not Registered', '09245455552', '5354-545-56', 'jakesim@gmail.com', '1634656788445_tumblr_d637b9fca7afc39f76cc3b0c7e515b10_36b993f3_400.jpg'),
-(7, 'Lee ', '', 'Heeseung', '', 'Male', '2001-10-15', '003', 'Sampaguita St.', 'Purok 12', 'Singer', 'Filipino', 'Covid', 'Single', 'Not Registered', '09268187409', '5354', 'heeseung@gmail.com', '1634656776509_E_vBcOCUUAQeybi.jpg'),
-(8, 'Park ', 'Sung', 'Hoon', '', 'Male', '2002-12-02', '003', 'Sampaguita St.', 'Purok 9', 'Singer', 'Filipino', 'Covid', 'Single', 'Registered', '09268187409', '244-4233-233', 'sung123@gmail.com', '1634656956910_tumblr_6555ef84bbab4e5ba08d4a87d947505f_1b4f5575_1280.png'),
-(9, 'Ryu-jin', '', 'Shin ', '', 'Female', '2014-04-17', '003', 'Sampaguita St.', 'Purok 9', 'Singer', 'Filipino', 'No Comorbidity', 'Married', 'Not Registered', '09268187409', '244-32-3222', 'ryujin@gmail.com', '1635268857014_EqNSmlxXcAEX9nY.jpg'),
-(10, 'Lia', 'Jisu', 'Choi', '', 'Male', '2000-02-02', '003', 'Sampaguita St.', 'Purok 11', 'Singer', 'Filipino', 'No Comorbidity', 'Widowed', 'Not Registered', '09268187409', '5354', 'choijisu@gmail.com', '1635268889321_d6Eoz_5f.jpg'),
-(11, 'Gamri', 'Shi', 'Kim', '', 'Female', '1950-02-02', '005', 'Sampaguita St.', 'Purok 8', 'Actor', 'Filipino', 'No Comorbidity', 'Married', 'Registered', '09268187409', '244', 'gmari@gmail.com', '1634657554372_grandma.jpg'),
-(12, 'Bo-Ra', 'Bo', 'Choi ', '', 'Female', '2014-09-05', '153', 'Sampaguita St.', 'Purok 10', 'Actor', 'Filipino', 'High Blood', 'Single', 'Not Registered', '09268187409', '5354', 'bora@gmail.com', '1634657813870_ko-do-yeon2-6a5b383b7d6fa29619ceea2b9cfae8c7-529fdfb694e295c30180a06989263156.png'),
-(13, 'Joon', 'Yi', 'Jang', '', 'Male', '2013-12-01', '003', 'Sampaguita St.', 'Purok 8', 'Student', 'Filipino', 'No Comorbidity', 'Single', 'Not Registered', '1212121', '244', 'jangyi@gmail.com', '1634657957811_hometown-cha-cha-cha-36-5701-1632288252.jpg'),
-(14, 'Mat-Yi', 'Kim', 'Lee ', '', 'Female', '1952-06-26', '23', 'Sampaguita St.', 'Purok 5', 'Nurse', 'Filipino', '', 'Widowed', 'Not Registered', '09268187409', '244', 'matyi@gmail.com', '1634658111655_Hometown_Cha-Cha-Cha-Lee_Yong-Lee.jpg'),
-(15, 'Min-A', '', 'Shin ', '', 'Female', '2005-03-02', '003', 'Sampaguita St.', 'Purok 3', 'Singer', 'Filipino', 'No Comorbidity', 'Single', 'Registered', '09268187409', '244', 'herzliabarangan@gmail.com', '1635268963881_jCVxpph5_400x400.jpg'),
-(16, 'Juan', 'Reyes', 'Dela Cruz', 'Sr.', 'Male', '1960-07-11', '15', 'Santa Cruz', 'Purok 6', 'Businessman', 'Filipino', '-', 'Single', 'Registered', '09123456789', '877000', 'juandelacruz@email.com', '1623913790.jpg'),
-(17, 'Troy Michael', 'Ancino', 'Garidos', 'Jr.', 'Male', '1999-11-16', '555', 'Lemon', 'Purok 6', 'Web Developer', 'Filipino', '-', 'Single', 'Registered', '09269883740', '87000', 'newacc.troy@gmail.com', '1625992418779_leeikjun.jpg'),
-(18, 'Maria', 'Reyes', 'Cruz', '', 'Female', '1982-08-04', '120', 'Apple', 'Purok 6', 'civil engineer', 'filipino', '', 'Single', 'Registered', '+639105821593', '552-7085', 'maria@email.com', '1629248050227_chaesonghwa.jpg'),
-(19, 'Andres', 'Bonifacio', 'Rizal', 'Jr.', 'Male', '1992-02-20', '55', 'Mangga', 'Purok 6', 'Policeman', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '8777546', 'andres@email.com', '1629248178181_ahnjeongwon.jpg'),
-(20, 'Kathryn', 'Padilla', 'Bernando', '', 'Female', '1994-03-17', '87', 'Macopa', 'Purok 12', 'Actress', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '8995623', 'kath@email.com', '1629248301587_chuminha.jpg'),
-(21, 'Daniel', 'Santos', 'Padilla', 'III', 'Male', '1993-06-09', '32', 'Recto', 'Purok 3', 'Actor', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '45123698', 'daniel@email.com', '1629248402756_yangseokhyung.jpg'),
-(22, 'Charo', 'Santos', 'Concio', '', 'Female', '1963-06-03', '74', 'Mangga', 'Purok 7', 'Businesswoman', 'Filipino', '-', 'Widowed', 'Not Registered', '09531023180', '789456123', 'charo@email.com', '1629248639009_heoseonbin.jpg'),
-(23, 'Liza', 'Torres', 'Soberano', '', 'Female', '1998-06-10', '88', 'Santa Cruz', 'Purok 6', 'Student', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '12312', 'liza@email.com', '1629248929371_chaesonghwa.jpg'),
-(24, 'Enrique', 'Dela Cruz', 'Gil', 'Jr.', 'Male', '1994-06-08', '21', 'Alerta', 'Purok 11', 'Student', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '12312', 'enrique@email.com', '1629249001338_kimjunwan.jpg'),
-(25, 'Eunice', 'Tiblani', 'Cunanan', '', 'Female', '1999-04-15', '25', 'Mangga', 'Purok 7', 'Student', 'Filipino', '-', 'Single', 'Registered', '09531023180', '78465123', 'sherry@email.com', '1629249231020_janggyeoul.jpg'),
-(26, 'Vanessa', 'Liquit', 'Pascual', '', 'Female', '1999-09-13', '14', 'Santa Cruz', 'Purok 6', 'Student', 'Filipino', '-', 'Single', 'Registered', '09531023180', '8777829', 'banban@email.com', '1629249288297_chaesonghwa.jpg'),
-(27, 'Lia', 'Gomez', 'Barangan', '', 'Female', '2000-03-02', '12', 'Macopa', 'Purok 13', 'Student', 'Filipino', '-', 'Single', 'Registered', '09531023180', '1231287', 'lia@email.com', '1629249349689_chuminha.jpg'),
-(28, 'Jam', 'Cruz', 'Akmad', '', 'Male', '2006-01-20', '32', 'Sampaguita St.', 'Purok 7', 'Student', 'Korean', 'No Comorbidity', 'Single', 'Registered', '232324', '244', 'jammm@gmail.com', '1635269125553_cc96cf32c70bd77c6777b9425ffbd956.jpg');
+(44, 'Juan', 'Reyes', 'Dela Cruz', 'Sr.', 'Male', '1960-07-11', '15', 'Santa Cruz', 'Purok 6', 'Businessman', 'Filipino', '-', 'married', 'Registered', '09123456789', '877000', 'juandelacruz@email.com', '1623913790.jpg'),
+(55, 'Troy Michael', 'Ancino', 'Garidos', 'Jr.', 'Male', '1999-11-16', '555', 'Lemon', 'Purok 6', 'Web Developer', 'Filipino', '-', 'Single', 'Registered', '09269883740', '87000', 'newacc.troy@gmail.com', '1625992418779_leeikjun.jpg'),
+(61, 'Maria', 'Reyes', 'Cruz', '', 'Female', '1982-08-04', '120', 'Apple', 'Purok 6', 'civil engineer', 'filipino', '', 'married', 'Registered', '+639105821593', '552-7085', 'maria@email.com', '1629248050227_chaesonghwa.jpg'),
+(66, 'Andres', 'Bonifacio', 'Rizal', 'Jr.', 'Male', '1992-02-20', '55', 'Mangga', 'Purok 6', 'Policeman', 'Filipino', '-', 'single', 'Not Registered', '09531023180', '8777546', 'andres@email.com', '1629248178181_ahnjeongwon.jpg'),
+(71, 'Kathryn', 'Padilla', 'Bernando', '', 'female', '1994-03-17', '87', 'Macopa', 'Purok 12', 'Actress', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '8995623', 'kath@email.com', '1629248301587_chuminha.jpg'),
+(72, 'Daniel', 'Santos', 'Padilla', 'III', 'Male', '1993-06-09', '32', 'Recto', 'Purok 3', 'Actor', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '45123698', 'daniel@email.com', '1629248402756_yangseokhyung.jpg'),
+(81, 'Charo', 'Santos', 'Concio', '', 'female', '1963-06-03', '74', 'Mangga', 'Purok 7', 'Businesswoman', 'Filipino', '-', 'widowed', 'Not Registered', '09531023180', '789456123', 'charo@email.com', '1629248639009_heoseonbin.jpg'),
+(83, 'Liza', 'Torres', 'Soberano', '', 'female', '1998-06-10', '88', 'Santa Cruz', 'Purok 6', 'Student', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '12312', 'liza@email.com', '1629248929371_chaesonghwa.jpg'),
+(87, 'Enrique', 'Dela Cruz', 'Gil', 'Jr.', 'Male', '1994-06-08', '21', 'Alerta', 'Purok 11', 'Student', 'Filipino', '-', 'Single', 'Not Registered', '09531023180', '12312', 'enrique@email.com', '1629249001338_kimjunwan.jpg'),
+(92, 'Eunice', 'Tiblani', 'Cunanan', '', 'Female', '1999-04-15', '25', 'Mangga', 'Purok 7', 'Student', 'Filipino', '-', 'single', 'Registered', '09531023180', '78465123', 'sherry@email.com', '1629249231020_janggyeoul.jpg'),
+(106, 'Vanessa', 'Liquit', 'Pascual', '', 'Female', '1999-09-13', '14', 'Santa Cruz', 'Purok 6', 'Student', 'Filipino', '-', 'Single', 'Registered', '09531023180', '8777829', 'banban@email.com', '1629249288297_chaesonghwa.jpg'),
+(130, 'Lia', 'Gomez', 'Barangan', '', 'Female', '2000-03-02', '12', 'Macopa', 'Purok 13', 'Student', 'Filipino', '-', 'single', 'Registered', '09531023180', '1231287', 'lia@email.com', '1629249349689_chuminha.jpg');
 
 -- --------------------------------------------------------
 
@@ -296,7 +259,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `user_name`, `password`, `name`, `role`) VALUES
-(1, 'admin', '1', 'admin', 'Admin'),
+(1, 'admin', '1', '', 'Admin'),
 (2, 'sec', '123', 'Vanessa Pascual', 'Secretary');
 
 --
@@ -335,7 +298,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `barangay_clearance`
 --
 ALTER TABLE `barangay_clearance`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT for table `officials`
@@ -347,13 +310,13 @@ ALTER TABLE `officials`
 -- AUTO_INCREMENT for table `residents`
 --
 ALTER TABLE `residents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

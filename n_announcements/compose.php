@@ -1,3 +1,44 @@
+<?php
+
+if (isset($_POST['submit'])) {
+
+    $ch = curl_init();
+    $parameters = array(
+        'apikey' => '82d304382e55223c089f3a2d85e42968', //Your API KEY
+        'number' => $_POST['num'],
+        'message' => $_POST['msg'],
+        'sendername' => 'SEMAPHORE'
+    );
+    curl_setopt($ch, CURLOPT_URL, 'https://api.semaphore.co/api/v4/messages');
+    curl_setopt($ch, CURLOPT_POST, 1);
+
+    //Send the parameters set above with the request
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($parameters));
+
+    // Receive response from server
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($ch);
+    curl_close($ch);
+
+    //Show the server response
+    if (!$result) {
+?>
+        <script>
+            alert('Message not sent!')
+        </script>
+    <?php
+    } else {
+        // echo $result;
+
+    ?>
+        <script>
+            alert('Message sent!')
+        </script>
+    <?php
+        }
+        }
+        ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -23,33 +64,34 @@
             </div>
 
             <div class="content">
-                <dxiv class="compose-sms">
-                    <div class="to">
-                        <h5>To</h5>
-                        <textarea name="home-address" id="home-address" rows="2"></textarea>
-                    </div>
-                    <div class="recipient-count">
-                        <h4>Recipients: 0</h4>
-                    </div>
+                <form method="POST">
+                    <dxiv class="compose-sms">
+                        <div class="to">
+                            <h5>To</h5>
+                            <textarea name="num" id="home-address" rows="2"></textarea>
+                        </div>
+                        <div class="recipient-count">
+                            <h4>Recipients: 0</h4>
+                        </div>
 
-                    <div class="subj">
+                        <!-- <div class="subj">
                         <h5>Subject</h5>
                         <input type="text">
-                    </div>
+                    </div> -->
 
-                    <div class="msg">
-                        <h5>Message</h5>
-                        <textarea name="home-address" id="home-address" rows="2"></textarea>
-                    </div>
-                    <div class="char-count">
-                        <h4>Characters:000/000</h4>
-                    </div>
+                        <div class="msg">
+                            <h5>Message</h5>
+                            <textarea name="msg" id="home-address" rows="2"></textarea>
+                        </div>
+                        <div class="char-count">
+                            <h4>Characters:000/000</h4>
+                        </div>
 
-                    <div class="send-clear-btn">
-                        <button class="send-btn">Send</button>
-                        <button class="clear-btn">Clear</button>
-                    </div>
-
+                        <div class="send-clear-btn">
+                            <button type="submit" name="submit" class="send-btn">Send</button>
+                            <button class="clear-btn">Clear</button>
+                        </div>
+                </form>
             </div>
 
 

@@ -43,11 +43,15 @@ function showFile(){
   let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //adding some valid image extensions in array
   if(validExtensions.includes(fileType)){ //if user selected file is an image file
     let fileReader = new FileReader(); //creating new FileReader object
-    fileReader.onload = ()=>{
-      let fileURL = fileReader.result; //passing user file source in fileURL variable
+    // fileReader.onload = ()=>{
+      fileReader.onload = function(){
+        $("#previewImg").attr("src", fileReader.result);
+      
+
+      // let fileURL = fileReader.result; //passing user file source in fileURL variable
   	  // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
-      let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
-      dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
+      // let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
+      // dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
     }
     fileReader.readAsDataURL(file);
   }else{

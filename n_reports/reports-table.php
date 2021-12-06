@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Barangay Management System</title>
+    <title>Reports</title>
     <link rel="icon" type="image/x-icon" href="../img/icons/north-logo.ico" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/jquery.dataTables.min.css" />
     <script src="../js/nav-time-date.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="../js/jquery.dataTables.min.js"></script>
-    <!-- <script src="https://cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js"></script> -->
     <script src="https://cdn.datatables.net/1.11.0/js/dataTables.bootstrap4.min.js"></script>
-    <!-- <script src="../js/jquery-paginate.js"></script> -->
-
+   
+    <!-- Buttons -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css" />
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
         <section>
             <div class="header">
                 <h1>Reports</h1>
-                <form action=" export_pdf.php" method="GET">
+                <!-- <form action=" export_pdf.php" method="GET">
                     <button class="export_pdf_btn" type="submit" name="export_pdf">
                         <img src="../img/icons/pdf-file.png" class="pdf-file"></img>
                         Export to PDF</button>
@@ -33,7 +39,7 @@
                     <button class="export_excel_btn" type="submit" name="export_excel">
                         <img src="../img/icons/excel.png" class="excel-file"></img>
                         Export to Excel</button>
-                </form>
+                </form> -->
             </div>
 
             <div class="header2">
@@ -41,7 +47,13 @@
                     <a href="../n_reports/reports.php"> <button class="graph-btn">Graphical View</button> </a>
                     <button class="table-btn">Table View</button>
                 </div>
-                <form action="" method="GET">
+                <form id="reportForm" action="reports-table.php?from_date=<?php echo $_GET['from_date'] ?>&to_date=<?php echo $_GET['from_date'] ?>">
+
+
+
+
+
+
                     <div class="input-date-range">
                         <input type="date" class="date-range-filter" name="from_date" value="<?php if (isset($_GET['from_date'])) {
                                                                                                     echo $_GET['from_date'];
@@ -52,8 +64,14 @@
                                                                                                 echo $_GET['to_date'];
                                                                                             } else {
                                                                                             } ?>">
-                        <button type="submit" class="date-btn"> Submit </button>
+                        <button type="Submit" class="date-btn"> Submit </button>
+
+
+
                     </div>
+                    <!-- <input class="export_excel_btn" type="button" name="export_excel" value="Export to Excel" onclick="askForSubmit()" disabled/> -->
+
+                    <!-- <input class="export_pdf_btn" type="button" name="export_pdf" value="Export to PDF" onclick="askForSave()" /> -->
                 </form>
 
 
@@ -72,13 +90,13 @@
             ?>
 
 
-            <div class="content" id="main">
-                <div class="table-panel">
+                    <div class="content" id="main">
+                        <div class="table-panel">
 
-                    <div class="total-sales">
-                        <h4>Total Sales</h4>
-                        <p> ₱<?php echo $salerow['sum(cnt)'] ?></p>
-                    </div>
+                            <div class="total-sales">
+                                <h4>Total Sales</h4>
+                                <p> ₱<?php echo $salerow['sum(cnt)'] ?></p>
+                            </div>
                     <?php
                 }
             }
@@ -95,25 +113,25 @@
 
                     <div class="total-sales">
                         <h4># of Business Clearance Issued </h4>
-                        <p><?php echo $clearance_count['clearance'] ?></p>
+                        <p>N/A</p>
                     </div>
 
 
-                </div>
+                        </div>
 
-                <div class="table-reports">
-                    <table id="resTable" class="display" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Date Issued</th>
-                                <th>Name</th>
-                                <th>Purpose</th>
-                                <th></th>
-                            </tr>
-                        </thead>
+                        <div class="table-reports">
+                            <table id="resTable" class="display" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Date Issued</th>
+                                        <th>Name</th>
+                                        <th>Purpose</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
 
-                        <?php if (isset($_GET['from_date']) && isset($_GET['to_date'])) {
+                                <?php if (isset($_GET['from_date']) && isset($_GET['to_date'])) {
 
                                     $from_date = $_GET['from_date'];
                                     $to_date = $_GET['to_date'];
@@ -126,14 +144,14 @@
                                         foreach ($query_run as $row) {
 
                                 ?>
-                        <tr>
-                            <td><?php echo $row['id'] ?></td>
-                            <td><?php echo $row['date_issued'] ?></td>
-                            <td><?php echo $row['name'] ?></td>
-                            <td><?php echo $row['purpose'] ?></td>
-                            <td></td>
-                        </tr>
-                        <?php
+                                            <tr>
+                                                <td><?php echo $row['id'] ?></td>
+                                                <td><?php echo $row['date_issued'] ?></td>
+                                                <td><?php echo $row['name'] ?></td>
+                                                <td><?php echo $row['purpose'] ?></td>
+                                                <td></td>
+                                            </tr>
+                                <?php
                                         }
                                     }
                                     // else {
@@ -141,28 +159,39 @@
                                     // }
                                 }
                                 ?>
-                </div>
-            </div>
-            </div>
-            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
         </section>
     </main>
 
     <?php include "../db_conn.php"; ?>
 
     <script>
-    $(document).ready(function() {
-        $('#resTable').dataTable({
-            // "bPaginate": false,
-            "bLengthChange": false,
-            // "bFilter": true,
-            "bInfo": false,
-            "pageLength": 10
-            // "bAutoWidth": false
+        $(document).ready(function() {
+            $('#resTable').dataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ],
+                "bLengthChange": false,
+                "bInfo": false,
+                "pageLength": 10
+            });
         });
-    });
     </script>
 
+    <script>
+        form = document.getElementById("reportForm");
 
+        function askForSave() {
+            form.action = "export_pdf.php";
+            form.submit();
+        }
 
+        function askForSubmit() {
+            form.action = "export_excel.php";
+            form.submit();
+        }
     </script>

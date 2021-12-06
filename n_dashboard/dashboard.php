@@ -86,7 +86,7 @@
 
                 <div class="col-1 e">
                     <div class="pop">
-                        <h3> age group <h3>
+                        <h3> Age Group <h3>
                                 <div class="votersChart">
                                     <canvas id="ageChart"></canvas>
                                 </div>

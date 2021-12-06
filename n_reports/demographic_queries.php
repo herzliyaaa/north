@@ -6,7 +6,7 @@
 <?php
 
 
-// SQL FOR AGE GROUP// (--ICHANGE PA NI KAY MALI--)
+// SQL FOR AGE GROUP// 
 $age_group =  mysqli_query(
     $conn,
     "SELECT CASE WHEN TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) <= 12   THEN 'child'
@@ -71,7 +71,7 @@ $femaleSqlChart =  mysqli_query($conn, "SELECT COUNT(id) as countF from resident
 $female_count = mysqli_fetch_array($femaleSqlChart);
 
 
-// SQL FOR AGE GROUP// (--ICHANGE PA NI KAY MALI--)
+// SQL FOR AGE GROUP// 
 $childAgeChart =  mysqli_query($conn,"SELECT COUNT(id) as childCount from residents where date_of_birth < DATE_ADD(NOW(),INTERVAL 12 YEAR)");
 $child_count = mysqli_fetch_array($childAgeChart);
 
@@ -90,46 +90,46 @@ $senior_count = mysqli_fetch_array($seniorAgeChart);
 
 // SQL (Barangay Population Count by Purok)//
 
-$prk1Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk1Count from residents where purok = 1 ");
+$prk1Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk1Count from residents where purok ='Purok 1' ");
 $prk1_count = mysqli_fetch_array($prk1Chart);
 
 
-$prk2Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk2Count from residents where purok = 2");
+$prk2Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk2Count from residents where purok = 'Purok 2'");
 $prk2_count = mysqli_fetch_array($prk2Chart);
 
 
-$prk3Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk3Count from residents where purok = 3");
+$prk3Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk3Count from residents where purok = 'Purok 3'");
 $prk3_count = mysqli_fetch_array($prk3Chart);
 
-$prk4Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk4Count from residents where purok = 4 ");
+$prk4Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk4Count from residents where purok = 'Purok 4' ");
 $prk4_count = mysqli_fetch_array($prk4Chart);
 
-$prk5Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk5Count from residents where purok = 5");
+$prk5Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk5Count from residents where purok = 'Purok 5'");
 $prk5_count = mysqli_fetch_array($prk5Chart);
 
 
-$prk6Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk6Count from residents where purok = 6");
+$prk6Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk6Count from residents where purok = 'Purok 6'");
 $prk6_count = mysqli_fetch_array($prk6Chart);
 
-$prk7Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk7Count from residents where purok = 7");
+$prk7Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk7Count from residents where purok = 'Purok 7'");
 $prk7_count = mysqli_fetch_array($prk7Chart);
 
-$prk8Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk8Count from residents where purok = 8");
+$prk8Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk8Count from residents where purok = 'Purok 8'");
 $prk8_count = mysqli_fetch_array($prk8Chart);
 
-$prk9Chart =  mysqli_query( $conn,"SELECT COUNT(id) as prk9Count from residents where purok = 9");
+$prk9Chart =  mysqli_query( $conn,"SELECT COUNT(id) as prk9Count from residents where purok = 'Purok 9'");
 $prk9_count = mysqli_fetch_array($prk9Chart);
 
-$prk10Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk10Count from residents where purok = 10");
+$prk10Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk10Count from residents where purok = 'Purok 10'");
 $prk10_count = mysqli_fetch_array($prk10Chart);
 
-$prk11Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk11Count from residents where purok = 11");
+$prk11Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk11Count from residents where purok = 'Purok 11'");
 $prk11_count = mysqli_fetch_array($prk11Chart);
 
-$prk12Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk12Count from residents where purok = 12");
+$prk12Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk12Count from residents where purok = 'Purok 12'");
 $prk12_count = mysqli_fetch_array($prk12Chart);
 
-$prk13Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk13Count from residents where purok = 13");
+$prk13Chart =  mysqli_query($conn,"SELECT COUNT(id) as prk13Count from residents where purok = 'Purok 13'");
 $prk13_count = mysqli_fetch_array($prk13Chart);
 
 

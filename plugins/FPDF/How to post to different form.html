@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SO Example</title>
+</head>
+<body>
+<form id="someForm" action="" method="POST">
+<!--Put your inputs here -->
+<input type="button" value="Save" name="save" onclick="askForSave()" />
+<input type="button" value="Finished" name="finished" onclick="askForSubmit()" />
+</form>
+<script>
+form = document.getElementById("someForm");
+function askForSave() {
+	form.action="save_for_later.php";
+	form.action="http://box.sianware.com/echopost.php";
+	form.submit();
+}
+function askForSubmit() {
+	form.action="submit_for_approval.php";
+	form.submit();
+}
+
+</script>
+</body>
+</html>

@@ -50,25 +50,25 @@
             <div class="reports-content" id="main">
 
 
-                <!-- <div class="periodical-range">
-                    <button type="button" class="active period-btn">1 Day</button>
-                    <a href="../n_reports/week-graph.php"><button  type="button" class="period-btn">1 Week</button></a>
-                  
+                <div class="periodical-range">
+                    <a href="../n_reports/reports.php"> <button type="button" class="period-btn">1 Day</button></a>
+
+                    <button type="button" class="active period-btn">1 Week</button>
                     <button type="button" class="period-btn">1 Month</button>
                     <button type="button" class="period-btn">1 Year</button>
-                </div> -->
+                </div>
                 <div id="chart-container" class="chart-container">
 
 
-                    <!-- <div class="age_div">
-                        <h3>Barangay Clearance Sales <h3> <canvas class="" id="weeklyChart"></canvas>
+                    <div class="age_div">
+                        <h3>Barangay Clearance Sales <h3> <canvas class="weekly-chart" id="weeklyChart"></canvas>
                     </div>
 
 
 
                     <div class="prk_div">
-                        <h3>Barangay Business Clearance Sales <h3> <canvas class="myprkChart" id="prkChart"></canvas>
-                    </div> -->
+                        <h3>Barangay Business Clearance Sales<h3> <canvas class="myprkChart" id="prkChart"></canvas>
+                    </div>
 
                 </div>
 
@@ -79,31 +79,31 @@
     </main>
 
     <?php include "../db_conn.php"; ?>
-    <?php include "../n_reports/demographic_queries.php"; ?>
-    <?php include "../n_reports/charts.php" ?>
+    <?php include "../n_reports/sales-queries.php"; ?>
+    <?php include "../n_reports/brgy-clearance-charts.php" ?>
 
     <script>
-    function saveAsPDF() {
-        html2canvas(document.getElementById("chart-container"), {
-            onrendered: function(canvas) {
-                var img = canvas.toDataURL(); //image data of canvas
-                var doc = new jsPDF();
-                doc.addImage(img, 10, 10);
-                doc.save('export-test.pdf');
-            }
+        function saveAsPDF() {
+            html2canvas(document.getElementById("chart-container"), {
+                onrendered: function(canvas) {
+                    var img = canvas.toDataURL(); //image data of canvas
+                    var doc = new jsPDF();
+                    doc.addImage(img, 10, 10);
+                    doc.save('export-test.pdf');
+                }
+            });
+        }
+
+        $(".periodical-range > .period-btn").click(function() {
+            $(".periodical-range > .period-btn").removeClass("active");
+            $(this).addClass("active");
         });
-    }
-
-    $(".periodical-range > .period-btn").click(function() {
-        $(".periodical-range > .period-btn").removeClass("active");
-        $(this).addClass("active");
-    });
 
 
-    $(".btn-group-reports > .graph-btn").click(function() {
-        $(".btn-group-reports > .graph-btn").removeClass("active");
-        $(this).addClass("active");
-    });
+        $(".btn-group-reports > .graph-btn").click(function() {
+            $(".btn-group-reports > .graph-btn").removeClass("active");
+            $(this).addClass("active");
+        });
     </script>
 
 

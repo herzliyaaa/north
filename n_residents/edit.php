@@ -89,8 +89,8 @@
                             <select name="sex" id="sex" value="<?php echo $row['sex']; ?>">
                                 <option value="<?php echo $row['sex']; ?>" selected hidden><?php echo $row['sex']; ?>
                                 </option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                             </select>
                         </div>
 
@@ -118,19 +118,19 @@
                                 <option value="<?php echo $row['purok']; ?>" selected hidden>
                                     <?php echo $row['purok']; ?></option>
 
-                                <option value="purok 1">Purok 1</option>
-                                <option value="purok 2">Purok 2</option>
-                                <option value="purok 3">Purok 3</option>
-                                <option value="purok 4">Purok 4</option>
-                                <option value="purok 5">Purok 5</option>
-                                <option value="purok 6">Purok 6</option>
-                                <option value="purok 7">Purok 7</option>
-                                <option value="purok 8">Purok 8</option>
-                                <option value="purok 9">Purok 9</option>
-                                <option value="purok 10">Purok 10</option>
-                                <option value="purok 11">Purok 11</option>
-                                <option value="purok 12">Purok 12</option>
-                                <option value="purok 13">Purok 13</option>
+                                <option value="Purok 1">Purok 1</option>
+                                <option value="Purok 2">Purok 2</option>
+                                <option value="Purok 3">Purok 3</option>
+                                <option value="Purok 4">Purok 4</option>
+                                <option value="Purok 5">Purok 5</option>
+                                <option value="Purok 6">Purok 6</option>
+                                <option value="Purok 7">Purok 7</option>
+                                <option value="Purok 8">Purok 8</option>
+                                <option value="Purok 9">Purok 9</option>
+                                <option value="Purok 10">Purok 10</option>
+                                <option value="Purok 11">Purok 11</option>
+                                <option value="Purok 12">Purok 12</option>
+                                <option value="Purok 13">Purok 13</option>
                             </select>
                             <!-- <input type="text" name="purok" id="home-address" value="<?php echo $row['purok']; ?>" > -->
                         </div>
@@ -159,9 +159,9 @@
                             <select name="civil_status" id="civ-stat">
                                 <option value="<?php echo $row['civil_status']; ?>" selected hidden>
                                     <?php echo $row['civil_status']; ?></option>
-                                <option value="single">Single</option>
-                                <option value="married">Married</option>
-                                <option value="widowed">Widowed</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Widowed">Widowed</option>
                             </select>
                         </div>
 

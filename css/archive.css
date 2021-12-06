@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #f64242;
+    --white-color: #f7f6fb;
+    --black-color: #1a1a2e;
+    --red-color: #d41e21;
+    --green-color: #38b000;
+    --blue-color: #01497c;
+}
+
+
+.group-29 {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.group-21 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 502px;
+    height: 382px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.group-26 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 502px;
+    height: 382px;
+    align-items: center;
+
+}
+
+
+.group-27 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 502px;
+    height: 382px;
+    align-items: flex-start;
+    color: white;
+    margin-right: 10px;
+}
+
+.group-28 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 502px;
+    height: 382px;
+    align-items: flex-start;
+    /* background-color: black; */
+    /* margin-bottom: 20px; */
+}
+
+.overlap-group {
+    align-items: center;
+    justify-content: center;
+    background-color: #FA3030;
+    border-radius: 44px;
+    display: flex;
+    position: relative;
+    height: 343px;
+    padding: 50px 0;
+    width: 400px;
+    margin-top: 3%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+.group-21 :hover {
+    background-color: var(--black-color);
+}
+
+.group-26 :hover {
+    background-color: var(--black-color);
+}
+
+.group-27 :hover {
+    background-color: var(--black-color);
+}
+
+
+.group-28 :hover {
+    background-color: var(--black-color);
+}
+
+/* .official-archive{
+      position: absolute;
+      top: 80%;
+      left: 40%;
+  } */
+
+
+.group-21 h1 {
+    position: absolute;
+
+    top: 80%;
+    left: 38%;
+}
+
+.group-26 h1 {
+    position: absolute;
+    top: 80%;
+    left: 36.5%;
+}
+
+.group-27 h1 {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+}
+
+.group-28 h1 {
+    position: absolute;
+    top: 80%;
+    left: 44%;
+}

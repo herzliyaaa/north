@@ -530,7 +530,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0rem 0;
 }
 
 .purokChart {
@@ -544,12 +544,12 @@ nav {
 #dash_prkChart {
   /* height: 200px !important;
   width: 400px !important; */
-  height: 13.5rem !important;
+  height: 14.5rem !important;
   width: 32rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 5%; */
+ 
 }
 
 /* .male-female h2 {
@@ -1908,13 +1908,15 @@ LOADER
   color: var(--white-color);
 } */
 
-/*#dash_VotersChart {
-  height: 175px !important;
-  width: 350px !important;
+#dash_VotersChart {
+  /* height: 185px !important;
+  width: 500px !important; */
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  padding: 2.1rem 0;
+  
+}
 
 /* REPORTS */
 
@@ -1923,14 +1925,15 @@ LOADER
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
+  top: 6.2rem;
+  right: 2.2rem;
   padding: 0.4rem;
   color: var(--white-color);
   font-size: 0.85rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120px;
 }
 
 .excel-file {
@@ -1942,7 +1945,7 @@ LOADER
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 1.2rem;
+  top:  6.2rem;
   right: 12em;
   padding: 0.4rem;
   color: var(--white-color);
@@ -1950,6 +1953,7 @@ LOADER
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120px;
 }
 
 .pdf-file {
@@ -1958,8 +1962,8 @@ LOADER
 
 
 #ageChart {
-  height: 260px !important;
-  width: 520px !important;
+  height: 230px !important;
+  width: 420px !important;
   margin: 0%;
 
 
@@ -1996,7 +2000,7 @@ LOADER
 
 /* REPORTS */
 
-.export_excel_btn {
+/* .export_excel_btn {
 
 
 
@@ -2041,7 +2045,7 @@ LOADER
 
   margin-right: 7px;
 }
-
+ */
 
 
 
@@ -2052,7 +2056,7 @@ LOADER
   justify-content: center;
   align-items: center;
   height: 450px;
-  border: 2px solid rgb(29, 29, 29);
+  /* border: 2px solid rgb(29, 29, 29); */
 
 
 
@@ -2209,6 +2213,7 @@ canvas#ageChart {
   margin: 0px;
   align-items: baseline;
   flex-wrap: nowrap;
+  margin-right: 15.5rem;
 }
 
 
@@ -2268,6 +2273,17 @@ canvas#ageChart {
   width: 100%;
 }
 
+.delete-btn-archive {
+
+  border-radius: 0.1rem;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  border: none;
+  cursor: pointer;
+  height: 2.2rem;
+  width: 3.8rem;
+  margin: 0.2rem;
+}
 
 /* .chart-container {
   flex: auto;

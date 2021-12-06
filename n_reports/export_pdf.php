@@ -53,7 +53,7 @@ class PDF extends FPDF
     {
         $this->SetFont('Montserrat-Bold', '', 10);
         $this->Cell(115);
-        $this->Cell(0, 0, 'Date Range: 2021/08/28 - 2021/08/29', 0, 0);
+        $this->Cell(0, 0, '', 0, 0);
         $this->Ln(7);
     }
 
@@ -118,7 +118,7 @@ if (mysqli_num_rows($query_run) > 0) {
         $pdf->Cell($width_cell[1], 10, $row['date_issued'], 1, 0, 'C');
         // $pdf->Cell($width_cell[2], 10, $row['purpose'], 1, 0, 'C');
         $pdf->Cell($width_cell[2], 10, 'Barangay Clearance', 1, 0, 'C');
-        $pdf->Cell($width_cell[3], 10, $row['purpose'], 1, 0, 'C');
+        $pdf->Cell($width_cell[3], 10, $row['name'], 1, 0, 'C');
         $pdf->Cell($width_cell[4], 10, $row['purpose'], 1, 0, 'C');
         $pdf->Ln();
 
