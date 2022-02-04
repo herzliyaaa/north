@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
 
     $ch = curl_init();
     $parameters = array(
-        'apikey' => '82d304382e55223c089f3a2d85e42968', //Your API KEY
+        'apikey' => '', //Your API KEY
         'number' => $_POST['num'],
         'message' => $_POST['msg'],
         'sendername' => 'SEMAPHORE'
